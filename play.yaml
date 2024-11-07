@@ -1,5 +1,5 @@
 ---
-- name: Installing the Apache2 on the Slave1
+- name: Install the Apache2 on the Slave1
   become: true
   hosts: Agent1
   tasks:
@@ -10,7 +10,7 @@
           name: apache2
           state: started
 
-- name: Installing the NGINX on the Slave2
+- name: Install the NGINX on the Slave2
   become: true
   hosts: Agent2
   tasks:
