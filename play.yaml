@@ -1,7 +1,7 @@
 ---
 - name: Installing the Apache2 on the Slave1
   become: true
-  hosts: Agent1
+  hosts: Instance2
   tasks:
     - name: install apache2
       apt: name=apache2 state=latest
@@ -12,7 +12,7 @@
           enabled: True
 - name: Installing the NGINX on the Slave2
   become: true
-  hosts: Agent2
+  hosts: Instance3
   tasks:
     - name: install nginx
       apt: name=nginx state=latest
