@@ -1,5 +1,5 @@
 ---
-- name: Install the Apache2 on the Slave1
+- name: Installing the Apache2 on the Slave1
   become: true
   hosts: Agent1
   tasks:
@@ -9,8 +9,8 @@
       service:
           name: apache2
           state: started
-
-- name: Install the NGINX on the Slave2
+          enabled: True
+- name: Installing the NGINX on the Slave2
   become: true
   hosts: Agent2
   tasks:
@@ -20,4 +20,4 @@
       service:
           name: nginx
           state: started
-
+          enabled: True
