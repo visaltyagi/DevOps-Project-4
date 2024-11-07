@@ -1,5 +1,5 @@
 ---
-- name: Installing the Apache2 on the Agent1
+- name: Install the Apache2 on the Agent1
   become: true
   hosts: Instance2
   tasks:
@@ -10,7 +10,7 @@
           name: apache2
           state: started
 
-- name: Installing the NGINX on the Agent2
+- name: Install the NGINX on the Agent2
   become: true
   hosts: Instance3
   tasks:
