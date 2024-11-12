@@ -3,7 +3,7 @@
   become: true
   hosts: Instance2
   tasks:
-    - name: installing apache2
+    - name: install apache2
       apt: name=apache2 state=latest
     - name: start apache2
       service:
@@ -14,7 +14,7 @@
   become: true
   hosts: Instance3
   tasks:
-    - name: installing nginx
+    - name: install nginx
       apt: name=nginx state=latest
     - name: start nginx
       service:
